@@ -13,7 +13,7 @@ COPY Gemfile.lock /be/Gemfile.lock
 RUN gem install bundler -v 2.1.4
 
 # gem(Rails6)のインストール
-RUN bundle _2.1.4_ install
+RUN bundle _2.2.33_ install
 
 RUN bundle config build.nokogiri -- \
     --use-system-libraries \
